@@ -1,0 +1,139 @@
+* { 
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #968877;
+  background-image: linear-gradient(rgba(63, 39, 8, 0.8), rgba(63, 39, 8, 0.8)), url('Puppies.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color:  #968877;
+  min-height: 100vh;
+}
+
+nav {
+  background: #968877;
+  padding: 20px 24px;
+  width: 100%; 
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+nav ul {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  color: #cd8d2e;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+nav a:hover,
+nav a.active {
+  background:  #6b5522;
+  color: #cd932e;
+}
+.header-title {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Puppies.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  margin-bottom: 30px;
+  border-bottom: 4px solid #cd932e;
+}
+.header-title h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.header-title p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #e2e8f0;
+}
+
+.contact-section {
+  max-width: 900px;
+  margin: 0 auto 50px auto;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.contact-section h2 {
+  color: #968877;
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.section-description {
+  color: #555555;
+  margin-bottom: 30px;
+  font-size: 1.05rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.contact-item {
+  background: #ffffff;
+  border: 2px solid #b0cbee;
+  border-radius: 12px;
+  padding: 24px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  border-color: #cd932e;
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.contact-details h3 {
+  font-size: 1.1rem;
+  color: #3f2708;
+  margin: 0 0 8px 0;
+}
+
+.contact-details p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.4;
+}
